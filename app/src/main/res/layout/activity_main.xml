@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Nombre"
+        android:gravity="right"/>
+    <EditText
+        android:id="@+id/nacimiento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter fecha nacimiento"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="right"
+        android:layout_below="@+id/Nombre"/>
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter telefonon"
+        android:gravity="right"
+        android:layout_below="@+id/nacimiento"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:gravity="right"
+        android:layout_below="@+id/telefono"/>
+    <EditText
+        android:id="@+id/descripcioncontacto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter descripcion contacto"
+        android:gravity="right"
+        android:layout_below="@+id/email"/>
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Siguiente"
+        android:layout_below="@+id/descripcioncontacto"/>
+
+
+</RelativeLayout>
